@@ -1,4 +1,4 @@
-package com.fsd2020.security;
+package com.fsd2020;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
