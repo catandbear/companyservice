@@ -1,5 +1,7 @@
 package com.fsd2020.data.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -11,4 +13,5 @@ public interface IPOMapper {
 
     // IPO 
     int addIPO(IPOEntity ipo);
+    List<IPOEntity> listIPO();
 }

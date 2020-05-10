@@ -34,6 +34,10 @@
 				company_code = #{company_code}
 	</update>
 	
+	<select id="listCompany" resultType="com.fsd2020.data.entity.CompanyEntity">
+		select * from company
+	</select>
+	
 	<select id="getCompanyByName" resultType="com.fsd2020.data.entity.CompanyEntity">
 		select * from company where company_name = #{company_name}
 	</select>
