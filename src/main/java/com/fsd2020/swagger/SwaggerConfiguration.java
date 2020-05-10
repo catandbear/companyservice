@@ -1,4 +1,4 @@
-package com.fsd2020.swagger.config;
+package com.fsd2020.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
