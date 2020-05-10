@@ -13,7 +13,7 @@ import com.fsd2020.data.entity.CompanyEntity;
 public interface CompanyMapper {
 
     int addCompany(CompanyEntity company);
-    int disableCompanyByName(String companyCode);
+    int disableCompanyByCode(String company_code);
     int updateCompany(CompanyEntity company);
     
     List<CompanyEntity> listCompany();

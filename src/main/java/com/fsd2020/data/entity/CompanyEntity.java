@@ -11,6 +11,7 @@ import lombok.ToString;
 @ToString
 public class CompanyEntity {
 
+	private int id;
 	private String company_code;
 	private String company_name;
 	private int turnover;

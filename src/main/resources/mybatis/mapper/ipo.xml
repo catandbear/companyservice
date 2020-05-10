@@ -5,9 +5,19 @@
 
 <mapper namespace="com.fsd2020.data.mapper.IPOMapper">
 	
-	<insert id="addIPO" parameterType="com.fsd2020.data.entity.CompanyEntity" >
-	    insert into company 
-	    (company_code,company_name,turnover, ceo, board_of_director, listed_in_se, sector_name, brife_write_up, stock_code, company_status) 
-	    values (#{company_code},#{company_name},#{turnover}, #{ceo}, #{board_of_director}, #{listed_in_se},#{sector_name},#{brife_write_up},#{stock_code},#{company_status})
+	<insert id="addIPO" parameterType="com.fsd2020.data.entity.IPOEntity" >
+	    insert into ipo_detail (
+	    	company_name,
+	    	stock_exchange,
+	    	price_per_share,
+	    	total_num,
+	    	remark
+	    	) values (
+	    		#{company_name},
+				#{stock_exchange},
+				#{price_per_share},
+				#{total_num},
+				#{remark}
+				)
 	</insert>
 </mapper>
