@@ -14,7 +14,7 @@
 	<update id="disableCompanyByCode" >
 		UPDATE company 
 			SET 
-				company_status='0' 
+				company_status='Inactive' 
 			WHERE 
 				company_code = #{company_code}
 	</update>

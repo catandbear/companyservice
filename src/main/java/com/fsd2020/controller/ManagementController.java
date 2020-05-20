@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,7 +40,7 @@ public class ManagementController {
 	public ReturnedEntity disableCompany(@RequestBody(required = true) CompanyEntity company) {
 				
 		int status = companyMapper.disableCompanyByCode(company.getCompany_code());
-		if (status ==1) {
+		if (status == 1) {
 			return new ReturnedEntity("ok");
 		}
 		return new ReturnedEntity("failed");
@@ -55,7 +56,7 @@ public class ManagementController {
 		return new ReturnedEntity("failed");
 	}
 	
-	@PostMapping("list")
+	@GetMapping("list")
 	public List<CompanyEntity> listCompany() {
 		return companyMapper.listCompany();
 	}
